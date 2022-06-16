@@ -1,14 +1,15 @@
 {
   "name": "@ali-arms-upload-sourcemap/vite-plugin",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "rm -rf ./dist && tsc"
+    "build": "rm -rf ./dist && tsc",
+    "publish-project": "pnpm build && pnpm publish --access public"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AylaAsia-LuoShiheng/ali-arms-upload-sourcemap.git",
+    "url": "https://github.com/AylaAsia-LuoShiheng/ali-arms-upload-sourcemap",
     "directory": "packages/vite-plugin"
   },
   "keywords": [

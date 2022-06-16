@@ -1,11 +1,15 @@
 {
   "name": "ali-arms-upload-sourcemap",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "pnpm -r run build",
-    "publish": "pnpm build && pnpm publish"
+    "publish-core": "pnpm -C ./packages/core publish-project",
+    "publish-vite": "pnpm -C ./packages/vite-plugin publish-project",
+    "publish-webpack": "pnpm -C ./packages/webpack-plugin publish-project",
+    "publish-plugin": "pnpm publish-vite && pnpm publish-webpack",
+    "publish-all": "pnpm publish-core && pnpm publish-plugin"
   },
   "author": "AylaAsia-Shiheng <shiheng.luo@aylaasia.com>",
   "repository": {
