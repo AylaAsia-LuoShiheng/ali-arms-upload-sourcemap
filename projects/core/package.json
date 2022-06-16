@@ -1,0 +1,29 @@
+{
+  "name": "@ali-arms-upload-sourcemap/core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AylaAsia-LuoShiheng/ali-arms-upload-sourcemap",
+    "directory": "packages/core"
+  },
+  "keywords": [
+    "sourcemap",
+    "arms"
+  ],
+  "author": "AylaAsia-Shiheng <shiheng.luo@aylaasia.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@alicloud/arms20190808": "^1.0.1",
+    "@alicloud/openapi-client": "^0.4.1",
+    "@alicloud/tea-util": "^1.4.0"
+  },
+  "files": [
+    "dist",
+    "src"
+  ]
+}

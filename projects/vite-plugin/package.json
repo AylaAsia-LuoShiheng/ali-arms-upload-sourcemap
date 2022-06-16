@@ -1,0 +1,31 @@
+{
+  "name": "@ali-arms-upload-sourcemap/vite-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AylaAsia-LuoShiheng/ali-arms-upload-sourcemap.git",
+    "directory": "packages/vite-plugin"
+  },
+  "keywords": [
+    "vite",
+    "plugin",
+    "arms"
+  ],
+  "author": "AylaAsia-Shiheng <shiheng.luo@aylaasia.com>",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "devDependencies": {
+    "vite": "^2.9.12"
+  },
+  "dependencies": {
+    "@ali-arms-upload-sourcemap/core": "workspace: *"
+  }
+}

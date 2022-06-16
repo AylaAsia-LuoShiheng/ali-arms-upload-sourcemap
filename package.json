@@ -1,0 +1,25 @@
+{
+  "name": "ali-arms-upload-sourcemap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "publish": "pnpm build && pnpm publish"
+  },
+  "author": "AylaAsia-Shiheng <shiheng.luo@aylaasia.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AylaAsia-LuoShiheng/ali-arms-upload-sourcemap"
+  },
+  "keywords": [
+    "sourcemap",
+    "arms"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
+  }
+}

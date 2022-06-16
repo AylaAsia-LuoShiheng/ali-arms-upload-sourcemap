@@ -1,0 +1,28 @@
+{
+  "name": "@ali-arms-upload-sourcemap/webpack-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AylaAsia-LuoShiheng/ali-arms-upload-sourcemap",
+    "directory": "packages/webpack-plugin"
+  },
+  "keywords": [
+    "vite",
+    "plugin",
+    "arms"
+  ],
+  "author": "AylaAsia-Shiheng <shiheng.luo@aylaasia.com>",
+  "license": "MIT",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "dependencies": {
+    "@ali-arms-upload-sourcemap/core": "workspace: *"
+  }
+}
