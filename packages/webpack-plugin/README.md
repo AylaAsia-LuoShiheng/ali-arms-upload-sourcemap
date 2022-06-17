@@ -1,3 +1,5 @@
-auto upload source map to ali arms
+**基于@ali-arms-upload-sourcemap/core 的 webpack 插件套壳**
 
-注意文件大小， 太大了传不上去， 要分包
+通过 compiler 获取到打包后的路径,
+
+在 done 钩子执行 core 抛出的方法
