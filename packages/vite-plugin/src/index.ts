@@ -14,7 +14,7 @@ export default function pluginConfig(config: ConfigType): Plugin {
       const { outDir, assetsDir } = resolvedConfig.build;
       outDirFinal = path.resolve(root, outDir, assetsDir);
     },
-    buildEnd() {
+    closeBundle() {
       handleUpload(config, outDirFinal);
     }
   };

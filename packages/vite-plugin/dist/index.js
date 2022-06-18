@@ -16,7 +16,7 @@ function pluginConfig(config) {
             const { outDir, assetsDir } = resolvedConfig.build;
             outDirFinal = path_1.default.resolve(root, outDir, assetsDir);
         },
-        buildEnd() {
+        closeBundle() {
             (0, core_1.default)(config, outDirFinal);
         }
     };
