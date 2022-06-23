@@ -1,3 +1,4 @@
+import fs from "fs";
 import { readDir, readFile } from "./utils";
 import Client, { ClientConfigType, UploadDefaultConfigType } from "./client";
 export type ConfigType = {
@@ -17,6 +18,10 @@ export default function (
   const { pid } = uploadDefaultConfig;
   if (!accessKeyId || !accessKeySecret || !pid) {
     console.log("请输入必填项");
+    return;
+  }
+  if (!fs.existsSync(outDirFinal)) {
+    console.log("path is not exists");
     return;
   }
   if (disabled) {

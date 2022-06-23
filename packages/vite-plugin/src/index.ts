@@ -11,8 +11,8 @@ export default function pluginConfig(config: ConfigType): Plugin {
     configResolved(resolvedConfig) {
       // 获取打包文件夹路径
       const { root } = resolvedConfig;
-      const { outDir, assetsDir } = resolvedConfig.build;
-      outDirFinal = path.resolve(root, outDir, assetsDir);
+      const { outDir } = resolvedConfig.build;
+      outDirFinal = path.resolve(root, outDir);
     },
     closeBundle() {
       handleUpload(config, outDirFinal);

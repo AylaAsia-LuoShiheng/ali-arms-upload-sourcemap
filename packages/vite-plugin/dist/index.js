@@ -13,8 +13,8 @@ function pluginConfig(config) {
         configResolved(resolvedConfig) {
             // 获取打包文件夹路径
             const { root } = resolvedConfig;
-            const { outDir, assetsDir } = resolvedConfig.build;
-            outDirFinal = path_1.default.resolve(root, outDir, assetsDir);
+            const { outDir } = resolvedConfig.build;
+            outDirFinal = path_1.default.resolve(root, outDir);
         },
         closeBundle() {
             (0, core_1.default)(config, outDirFinal);

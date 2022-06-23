@@ -3,6 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+const fs_1 = __importDefault(require("fs"));
 const utils_1 = require("./utils");
 const client_1 = __importDefault(require("./client"));
 // 兜底， 最大重试次数
@@ -12,6 +13,10 @@ function default_1({ clientConfig, uploadDefaultConfig, maxRetryTimes, disabled 
     const { pid } = uploadDefaultConfig;
     if (!accessKeyId || !accessKeySecret || !pid) {
         console.log("请输入必填项");
+        return;
+    }
+    if (!fs_1.default.existsSync(outDirFinal)) {
+        console.log("path is not exists");
         return;
     }
     if (disabled) {
